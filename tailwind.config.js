@@ -1,7 +1,82 @@
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        hd: '1920px',
+        '4k': '2500px',
+      },
+      colors: {
+        // for text colours
+        high: 'rgba(255, 255, 255, 0.87)',
+        medium: 'rgba(255, 255, 255, 0.6)',
+        disabled: 'rgba(255, 255, 255, 0.38)',
+        // palette
+        primary: {
+          DEFAULT: '#F8C546',
+          // darker: '#195855',
+          // dark: '#26837f',
+          // light: '#99d7d4',
+          // lighter: '#ccebea',
+          // 'lightest-1': '#eaf7f6',
+          // 'lightest-2': '#f5fbfb',
+        },
+        secondary: {
+          DEFAULT: '#38383B',
+          // darker: '#343456',
+          // dark: '#4e4d81',
+          // light: '#b3b3d6',
+          // lighter: '#d9d9ea',
+          // 'lightest-1': '#f0f0f7',
+          // 'lightest-2': '#f7f7fb',
+        },
+        danger: {
+          DEFAULT: '#d35d6e',
+          darker: '#692f37',
+          dark: '#9e4653',
+          light: '#e9aeb7',
+          lighter: '#f4d7db',
+          'lightest-1': '#fbeff0',
+          'lightest-2': '#fdf7f8',
+        },
+        warning: {
+          DEFAULT: '#e6a157',
+          darker: '#73502c',
+          dark: '#ac7941',
+          light: '#f2d0ab',
+          lighter: '#f9e7d5',
+          'lightest-1': '#fcf6ee',
+          'lightest-2': '#fefaf7',
+        },
+        success: {
+          DEFAULT: '#83b582',
+          darker: '#415a41',
+          dark: '#628861',
+          light: '#c1dac0',
+          lighter: '#e0ece0',
+          'lightest-1': '#f3f8f2',
+          'lightest-2': '#f9fbf9',
+        },
+        info: {
+          DEFAULT: '#8fbdd3',
+          darker: '#485f69',
+          dark: '#6b8e9e',
+          light: '#c7dee9',
+          lighter: '#e3eff4',
+          'lightest-1': '#f4f8fb',
+          'lightest-2': '#f9fcfd',
+        },
+        grey: {
+          DEFAULT: '#9ca3af',
+          darker: '#4e5158',
+          dark: '#757a83',
+          light: '#ced1d7',
+          lighter: '#e6e8eb',
+          'lightest-1': '#f5f6f7',
+          'lightest-2': '#fafafb',
+        },
+      },
+    },
   },
   plugins: [],
 };
