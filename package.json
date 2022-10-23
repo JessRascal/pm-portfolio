@@ -4,10 +4,15 @@
   "description": "Starting point for a Tailwindcss and Alpine.js site (using NPM).",
   "main": "index.js",
   "scripts": {
-    "start": "npm run tailwind-watch",
-    "tailwind-watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "alpinejs-dev": "npx esbuild ./src/index.js --outfile=dist/bundle.js --bundle",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx concurrently \"npm run tailwind-dev\" \"npm run alpine-dev\"",
+    "build": "npm run clean && npm run tailwind-build && npm run alpine-build && npm run html-build",
+    "alpine-build": "npx -y esbuild src/index.js --outfile=dist/js/bundle.js --bundle --minify",
+    "alpine-dev": "npx -y esbuild src/index.js --outfile=src/js/bundle.js --bundle --sourcemap --watch",
+    "tailwind-build": "npx -y tailwindcss -i src/input.css -o dist/css/output.css --minify",
+    "tailwind-dev": "npx -y tailwindcss -i src/input.css -o src/css/output.css --watch",
+    "html-build": "npx -y shx cp -r src/**/*.html dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "npx -y rimraf dist"
   },
   "repository": {
     "type": "git",
@@ -25,10 +30,8 @@
     "url": "https://github.com/JessRascal/tailwind-with-alpine-npm-template/issues"
   },
   "homepage": "https://github.com/JessRascal/tailwind-with-alpine-npm-template#readme",
-  "dependencies": {
-    "alpinejs": "^3.8.1"
-  },
   "devDependencies": {
-    "tailwindcss": "^3.0.15"
+    "alpinejs": "^3.10.4",
+    "tailwindcss": "^3.2.1"
   }
 }
