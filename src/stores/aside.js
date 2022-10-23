@@ -4,8 +4,8 @@ Alpine.store('stats', {
   name: 'Stats',
   items: [
     { text: 'Product Management', value: '11yrs' },
-    { text: 'Product Design', value: '7yrs' },
-    { text: 'Products Managed', value: '15' },
+    { text: 'Product Design', value: '7yrs' }, // TODO: Better name?
+    { text: 'Products Delivered', value: '15' }, // TODO: Better name?
     { text: 'Users Helped', value: '20k' },
   ],
 });
