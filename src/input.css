@@ -3,9 +3,18 @@
 @tailwind utilities;
 
 /* default base styles */
-h2 {
-  @apply mb-2.5 md:mb-4 text-4xl hd:text-5xl text-primary;
+@layer base {
+  h2 {
+    @apply mb-2.5 md:mb-4 text-4xl hd:text-5xl text-primary;
+  }
+  p {
+    @apply mb-4;
+  }
 }
-p {
-  @apply mb-4;
+
+/* element specific */
+@layer components {
+  .section-wrapper {
+    @apply h-screen p-6 md:px-12 lg:px-16 hd:px-32 md:pt-16 lg:pt-20;
+  }
 }

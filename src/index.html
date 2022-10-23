@@ -9,11 +9,11 @@
     <title>Michael Jessey | Product Manager</title>
   </head>
   <body class="md:text-2xl hd:text-3xl bg-slate-800 text-high">
-    <main class="p-6 md:px-12 lg:px-16 hd:px-32 md:pt-16 lg:pt-20">
-      <section class="h-screen">
+    <main class="">
+      <section class="section-wrapper">
         <!-- ABOUT ME -->
-        <div class="flex md:justify-between">
-          <div class="flex-1 md:initial">
+        <section class="md:grid md:grid-cols-6 lg:grid-cols-5 md:gap-4">
+          <div class="col-span-4">
             <h1
               class="text-5xl md:text-7xl lg:text-8xl text-center md:text-left text-primary"
             >
@@ -25,45 +25,28 @@
               Product Manager
             </h2>
           </div>
-          <!-- TODO: srcset for image? -->
-          <div class="hidden md:block">
-            <img
-              src="assets/me-and-kodi-cropped-200x200.jpg"
-              alt="A picture of me smiling while holding my mum's dog, Kodi"
-              class="max-w-full h-auto rounded-lg"
-            />
-          </div>
-        </div>
-        <h2>Hi</h2>
-
-        <section class="md:grid md:grid-cols-6 lg:grid-cols-5 md:gap-4">
-          <article class="md:col-span-4 lg:col-span-4">
-            <p>
-              I’m a customer-focused product manager that is very detail
-              obsessed (a gift and a curse at times).
-            </p>
-            <p>
-              I'm extremely passionate about creating excellent products that
-              solve real problems and are a joy to use. It's what I get out of
-              bed for and why I stay up later than I should.
-            </p>
-            <p>
-              My ability to understand the customer processes and pain points,
-              along with my strong technical background allows me to have an
-              impact at every stage of the product lifecycle.
-            </p>
-            <p>
-              With my experience in a range of disciplines, I feel at home in a
-              cross-functional team where I can be challenged and work closely
-              with the different departments to deliver successful products.
-            </p>
-          </article>
 
           <!-- ASIDE -->
           <aside
             x-data
-            class="hidden md:block md:col-span-2 lg:col-span-1 text-lg hd:text-2xl text-right text-medium"
+            class="hidden md:block md:col-span-2 lg:col-span-1 text-lg row-span-2 hd:text-2xl text-right text-medium"
           >
+            <div class="hidden md:flex mb-4 hd:mb-8 justify-end">
+              <img
+                srcset="
+                  assets/me-and-kodi-cropped-200x200.jpg 200w,
+                  assets/me-and-kodi-cropped-300x300.jpg 300w
+                "
+                sizes="
+                  (min-width: 1920px) 300px,
+                  (min-width: 2500px) 300px,
+                  200px"
+                src="assets/me-and-kodi-cropped-200x200.jpg"
+                alt="Me smiling while holding my mum's dog, Kodi"
+                class="rounded-lg"
+              />
+            </div>
+            <!-- TODO: Refactor so can loop each div (diff. if anchors) -->
             <!-- STATS -->
             <div>
               <h6
@@ -112,20 +95,43 @@
               </template>
             </div>
           </aside>
+
+          <article class="md:col-span-4 lg:col-span-4">
+            <h2>Hi</h2>
+            <p>
+              I’m a customer-focused product manager that is very detail
+              obsessed (a gift and a curse at times).
+            </p>
+            <p>
+              I'm extremely passionate about creating excellent products that
+              solve real problems and are a joy to use. It's what I get out of
+              bed for and why I stay up later than I should.
+            </p>
+            <p>
+              My ability to understand the customer processes and pain points,
+              along with my strong technical background allows me to have an
+              impact at every stage of the product lifecycle.
+            </p>
+            <p>
+              With my experience in a range of disciplines, I feel at home in a
+              cross-functional team where I can be challenged and work closely
+              with the different departments to deliver successful products.
+            </p>
+          </article>
         </section>
       </section>
       <!-- MY APPROACH -->
-      <section class="h-screen bg-slate-600">
+      <section class="section-wrapper bg-slate-700">
         <h2>My Approach</h2>
         <p>How I do things.</p>
       </section>
       <!-- CASE STUDIES -->
-      <section class="h-screen">
+      <section class="section-wrapper">
         <h2>Case Studies</h2>
         <p>Some past work</p>
       </section>
       <!-- CONTACT ME -->
-      <section class="h-screen">
+      <section class="section-wrapper bg-slate-700">
         <h2>Contact Me</h2>
         <p>Get in touch.</p>
       </section>
