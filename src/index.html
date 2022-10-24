@@ -156,7 +156,21 @@
             </div>
             <!-- TODO: Refactor so can loop each div (diff. if anchors) -->
             <!-- STATS -->
-            <div class="mt-4 hd:mt-8">
+            <template x-for="section in $store.sections" :key="$id">
+              <div class="mt-4 hd:mt-8">
+                <h6
+                  class="mb-1 uppercase text-disabled"
+                  x-text="section.name"
+                ></h6>
+                <div x-for="item in section.items" :key="$id">
+                  <div class="grid grid-cols-6 mb-1">
+                    <span class="col-span-5 mr-4" x-text="item.text"></span>
+                    <span x-text="item.value"></span>
+                  </div>
+                </div>
+              </div>
+            </template>
+            <!-- <div class="mt-4 hd:mt-8">
               <h6
                 class="mb-1 uppercase text-disabled"
                 x-text="$store.stats.name"
@@ -167,9 +181,9 @@
                   <span x-text="item.value"></span>
                 </div>
               </template>
-            </div>
+            </div> -->
             <!-- CONTACT -->
-            <div class="mt-4">
+            <!-- <div class="mt-4">
               <h6
                 class="mb-1 uppercase text-disabled"
                 x-text="$store.contact.name"
@@ -184,9 +198,9 @@
                   ></a>
                 </div>
               </template>
-            </div>
+            </div> -->
             <!-- CONTENT -->
-            <div class="mt-4">
+            <!-- <div class="mt-4">
               <h6
                 class="mb-1 uppercase text-disabled"
                 x-text="$store.content.name"
@@ -201,7 +215,7 @@
                   ></a>
                 </div>
               </template>
-            </div>
+            </div> -->
           </aside>
 
           <article class="md:col-span-4 lg:col-span-4">
