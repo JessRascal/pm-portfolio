@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx concurrently \"npm run tailwind-dev\" \"npm run alpine-dev\"",
-    "build": "npm run clean && npm run tailwind-build && npm run alpine-build && npm run html-build",
+    "build": "npm run clean && npm run tailwind-build && npm run alpine-build && npm run html-build && npm run assets-build",
     "alpine-build": "npx -y esbuild src/index.js --outfile=dist/js/bundle.js --bundle --minify",
     "alpine-dev": "npx -y esbuild src/index.js --outfile=src/js/bundle.js --bundle --sourcemap --watch",
     "tailwind-build": "npx -y tailwindcss -i src/input.css -o dist/css/output.css --minify",
     "tailwind-dev": "npx -y tailwindcss -i src/input.css -o src/css/output.css --watch",
     "html-build": "npx -y shx cp -r src/**/*.html dist",
+    "assets-build": "npx -y shx cp -r src/assets dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "npx -y rimraf dist"
   },
