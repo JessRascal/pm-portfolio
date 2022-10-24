@@ -1,7 +1,7 @@
 import Alpine from 'alpinejs';
 
 Alpine.store('nav', {
-  isSidePanelOpen: true,
+  isSidePanelOpen: false,
   links: [
     { text: 'About Me', url: '#about-me' },
     { text: 'My Approach', url: '#my-approach' },
