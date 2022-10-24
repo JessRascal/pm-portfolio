@@ -8,7 +8,7 @@
     <script src="js/bundle.js" defer></script>
     <title>Michael Jessey | Product Manager</title>
   </head>
-  <body class="md:text-xl hd:text-3xl bg-slate-800 text-high">
+  <body class="md:text-xl hd:text-3xl bg-slate-800 text-high antialiased">
     <!-- NAV -->
     <nav
       x-data
@@ -118,7 +118,10 @@
 
     <!-- CONTENT -->
     <main>
-      <section class="section-wrapper mt-12 scroll-mt-14" id="about-me">
+      <section
+        class="section-wrapper mt-12 scroll-mt-14 border-b border-slate-500/25"
+        id="about-me"
+      >
         <!-- ABOUT ME -->
         <section class="md:grid md:grid-cols-6 lg:grid-cols-5 md:gap-x-4">
           <div class="col-span-4">
@@ -136,7 +139,7 @@
 
           <!-- ASIDE -->
           <aside
-            class="hidden md:block md:col-span-2 lg:col-span-1 text-lg row-span-2 hd:text-2xl text-right text-medium"
+            class="hidden md:block md:col-span-2 lg:col-span-1 text-base row-span-2 hd:text-xl 4K:text-2xl text-right text-medium"
             x-data
           >
             <div class="hidden md:flex justify-end">
@@ -212,20 +215,23 @@
       </section>
       <!-- MY APPROACH -->
       <section
-        class="section-wrapper bg-slate-700 scroll-mt-14"
+        class="section-wrapper scroll-mt-14 border-b border-slate-500/25"
         id="my-approach"
       >
         <h2>My Approach</h2>
         <p>How I do things.</p>
       </section>
       <!-- CASE STUDIES -->
-      <section class="section-wrapper scroll-mt-14" id="case-studies">
+      <section
+        class="section-wrapper scroll-mt-14 border-b border-slate-500/25"
+        id="case-studies"
+      >
         <h2>Case Studies</h2>
         <p>Some past work</p>
       </section>
       <!-- CONTACT ME -->
       <section
-        class="section-wrapper bg-slate-700 scroll-mt-14"
+        class="section-wrapper scroll-mt-14 border-b border-slate-500/25"
         id="contact-me"
       >
         <h2>Contact Me</h2>
