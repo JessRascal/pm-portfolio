@@ -136,8 +136,8 @@
 
           <!-- ASIDE -->
           <aside
-            x-data
             class="hidden md:block md:col-span-2 lg:col-span-1 text-lg row-span-2 hd:text-2xl text-right text-medium"
+            x-data
           >
             <div class="hidden md:flex justify-end">
               <img
@@ -154,68 +154,36 @@
                 class="rounded-lg"
               />
             </div>
-            <!-- TODO: Refactor so can loop each div (diff. if anchors) -->
-            <!-- STATS -->
-            <template x-for="section in $store.sections" :key="$id">
+            <template x-for="section in $store.aside.sections" :key="$id">
               <div class="mt-4 hd:mt-8">
                 <h6
                   class="mb-1 uppercase text-disabled"
                   x-text="section.name"
                 ></h6>
-                <div x-for="item in section.items" :key="$id">
-                  <div class="grid grid-cols-6 mb-1">
-                    <span class="col-span-5 mr-4" x-text="item.text"></span>
-                    <span x-text="item.value"></span>
-                  </div>
-                </div>
+                <!-- section has links -->
+                <template x-if="section.hasLinks">
+                  <template x-for="item in section.items" :key="$id">
+                    <div class="grid mb-1">
+                      <a
+                        class="underline underline-offset-4 hover:text-high"
+                        x-bind:href="item.url"
+                        target="_blank"
+                        x-text="item.text"
+                      ></a>
+                    </div>
+                  </template>
+                </template>
+                <!-- section doesn't have links -->
+                <template x-if="!section.hasLinks">
+                  <template x-for="item in section.items" :key="$id">
+                    <div class="grid grid-cols-6 mb-1">
+                      <span class="col-span-5 mr-4" x-text="item.text"></span>
+                      <span x-text="item.value"></span>
+                    </div>
+                  </template>
+                </template>
               </div>
             </template>
-            <!-- <div class="mt-4 hd:mt-8">
-              <h6
-                class="mb-1 uppercase text-disabled"
-                x-text="$store.stats.name"
-              ></h6>
-              <template x-for="item in $store.stats.items" :key="$id">
-                <div class="grid grid-cols-6 mb-1">
-                  <span class="col-span-5 mr-4" x-text="item.text"></span>
-                  <span x-text="item.value"></span>
-                </div>
-              </template>
-            </div> -->
-            <!-- CONTACT -->
-            <!-- <div class="mt-4">
-              <h6
-                class="mb-1 uppercase text-disabled"
-                x-text="$store.contact.name"
-              ></h6>
-              <template x-for="item in $store.contact.items" :key="$id">
-                <div class="grid mb-1">
-                  <a
-                    class="underline underline-offset-4 hover:text-high"
-                    x-bind:href="item.url"
-                    target="_blank"
-                    x-text="item.text"
-                  ></a>
-                </div>
-              </template>
-            </div> -->
-            <!-- CONTENT -->
-            <!-- <div class="mt-4">
-              <h6
-                class="mb-1 uppercase text-disabled"
-                x-text="$store.content.name"
-              ></h6>
-              <template x-for="item in $store.content.items" :key="$id">
-                <div class="grid mb-1">
-                  <a
-                    class="underline underline-offset-4 hover:text-high"
-                    x-bind:href="item.url"
-                    target="_blank"
-                    x-text="item.text"
-                  ></a>
-                </div>
-              </template>
-            </div> -->
           </aside>
 
           <article class="md:col-span-4 lg:col-span-4">

@@ -1,6 +1,5 @@
 import Alpine from 'alpinejs';
-import './stores/nav';
-import './stores/aside';
+import './store';
 
 window.Alpine = Alpine;
 
