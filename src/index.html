@@ -252,8 +252,8 @@
         id="my-approach"
       >
         <h2>My Approach</h2>
-        <div class="max-w-4xl mx-auto relative">
-          <!-- Slides -->
+        <!-- Slides -->
+        <div class="max-w-4xl mx-auto py-8 relative">
           <template x-for="slide in $store.approach.slides" :key="slide.number">
             <div
               x-show="$store.approach.currentSlide === slide.number"
@@ -264,6 +264,7 @@
                 :src="'assets/markdown/my-approach/' + slide.markdownSrc"
               >
                 <!-- apply own styles -->
+                <!-- <template data-merge="append"> -->
                 <template>
                   <link rel="stylesheet" href="css/output.css" />
                 </template>
@@ -276,7 +277,7 @@
             <div class="flex items-center justify-start w-1/2">
               <button
                 type="button"
-                class="bg-slate-500 text-slate-700 hover:text-primary font-bold hover:shadow-lg rounded-full w-12 h-12 -ml-6"
+                class="bg-slate-600 hover:bg-slate-500 text-slate-700 hover:text-primary font-bold hover:shadow-lg rounded-full w-12 h-12 -ml-6 transition-colors ease-out"
                 x-on:click="$store.approach.currentSlide = $store.approach.currentSlide === 0 ? $store.approach.slides.length - 1 : $store.approach.currentSlide - 1"
               >
                 &#8592;
@@ -285,7 +286,7 @@
             <div class="flex items-center justify-end w-1/2">
               <button
                 type="button"
-                class="bg-slate-500 text-slate-700 hover:text-primary font-bold hover:shadow rounded-full w-12 h-12 -mr-6"
+                class="bg-slate-600 hover:bg-slate-500 text-slate-700 hover:text-primary font-bold hover:shadow rounded-full w-12 h-12 -mr-6 transition-colors ease-out"
                 x-on:click="$store.approach.currentSlide = $store.approach.currentSlide === $store.approach.slides.length - 1 ? 0 : $store.approach.currentSlide + 1"
               >
                 &#8594;
@@ -293,14 +294,14 @@
             </div>
           </div>
 
-          <!-- Buttons -->
+          <!-- step buttons -->
           <div class="absolute w-full flex items-center justify-center px-4">
             <template
               x-for="slide in $store.approach.slides"
               :key="slide.number"
             >
               <button
-                class="flex-1 w-4 h-2 mt-4 mx-2 mb-0 rounded-full hover:bg-slate-600 hover:shadow-lg overflow-hidden transition-colors duration-200 ease-out"
+                class="flex-1 w-4 h-2 md:h-3 mt-4 mx-2 mb-0 rounded-full hover:bg-slate-600 hover:shadow-lg overflow-hidden transition-colors ease-out"
                 :class="{ 
               'bg-primary': $store.approach.currentSlide === slide.number,
               'bg-slate-500': $store.approach.currentSlide !== slide.number 
