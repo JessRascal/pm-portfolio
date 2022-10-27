@@ -7,8 +7,13 @@
   h2 {
     @apply mb-2.5 md:mb-4 text-4xl hd:text-5xl text-primary;
   }
+
   p {
     @apply mb-4;
+  }
+
+  li {
+    @apply list-disc list-inside;
   }
 }
 
