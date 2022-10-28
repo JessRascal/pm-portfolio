@@ -16,6 +16,8 @@
     class="md:text-xl hd:text-3xl text-high antialiased bg-gradient-to-br from-slate-800 to-slate-900"
     :class="$store.nav.isSidePanelOpen ? 'overflow-hidden' : ''"
     x-data
+    @keyup.right="document.getElementById('nextSlideBtn').click()"
+    @keyup.left="document.getElementById('previousSlideBtn').click()"
   >
     <!-- NAV -->
     <nav
@@ -253,7 +255,9 @@
       >
         <h2>My Approach</h2>
         <!-- Slides -->
-        <div class="max-w-4xl mx-auto py-8 relative">
+        <div
+          class="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg hd:max-w-screen-2xl mx-auto py-8 relative"
+        >
           <template x-for="slide in $store.approach.slides" :key="slide.number">
             <div
               x-show="$store.approach.currentSlide === slide.number"
@@ -277,6 +281,7 @@
             <div class="flex items-center justify-start w-1/2">
               <button
                 type="button"
+                id="previousSlideBtn"
                 class="bg-slate-600 hover:bg-slate-500 text-slate-700 hover:text-primary font-bold hover:shadow-lg rounded-full w-12 h-12 -ml-6 transition-colors ease-out"
                 x-on:click="$store.approach.currentSlide = $store.approach.currentSlide === 0 ? $store.approach.slides.length - 1 : $store.approach.currentSlide - 1"
               >
@@ -286,6 +291,7 @@
             <div class="flex items-center justify-end w-1/2">
               <button
                 type="button"
+                id="nextSlideBtn"
                 class="bg-slate-600 hover:bg-slate-500 text-slate-700 hover:text-primary font-bold hover:shadow rounded-full w-12 h-12 -mr-6 transition-colors ease-out"
                 x-on:click="$store.approach.currentSlide = $store.approach.currentSlide === $store.approach.slides.length - 1 ? 0 : $store.approach.currentSlide + 1"
               >
@@ -311,6 +317,12 @@
             </template>
           </div>
         </div>
+        <small
+          class="hidden md:flex max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg hd:max-w-screen-2xl mx-auto mt-6 text-disabled"
+        >
+          <strong>Tip</strong>: You can move through the slides using the arrow
+          keys.
+        </small>
       </section>
       <!-- CASE STUDIES -->
       <section
@@ -342,7 +354,7 @@
             class="underline underline-offset-4"
             target="_blank"
             rel="noopener"
-            >Copy this site from GitHub</a
+            >Copy this site on GitHub</a
           >
         </div>
         <div class="md:col-span-4 md:row-start-2 md:text-center">

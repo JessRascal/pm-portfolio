@@ -1,4 +1,4 @@
-# Carry Out User Testing / Validation
+#### Carry Out User Testing / Validation
 
 Now that we have a high-fidelity interactive prototype (let’s just call it “prototype” going forward), we are able to get it in front of users and collect accurate feedback on the design.
 

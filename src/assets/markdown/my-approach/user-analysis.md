@@ -1,4 +1,4 @@
-# Customer/User Analysis
+#### Customer/User Analysis
 
 Collecting all of the qualitative and quantitate research data in the last step is great, but it’s not much use if I don’t take the time to understand it.
 

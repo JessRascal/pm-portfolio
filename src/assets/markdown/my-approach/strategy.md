@@ -1,4 +1,4 @@
-# Create a Product Strategy
+#### Create a Product Strategy
 
 Ok, now that I know what I’m dealing with, it’s time to figure out a strategy to achieve the product vision.
 
@@ -12,3 +12,5 @@ Success metrics should be specific to the product, but here are some examples:
 - Annual recurring revenue
 - Daily active users (DAU)
 - Net promoter score (NPS)
+
+`TODO: No mention of prioritsation (initial and ongoing)`

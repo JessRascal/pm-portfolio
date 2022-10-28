@@ -1,4 +1,4 @@
-# Create the Mockups / Prototype
+#### Create the Mockups / Prototype
 
 Now that I’ve figured out the general layout with my wireframes, it’s time to make things look pretty by creating the high-fidelity mockups.
 

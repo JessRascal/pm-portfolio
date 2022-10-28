@@ -1,4 +1,4 @@
-# Product Discovery Phase
+#### Product Discovery Phase
 
 For any new product or feature, I start out with the discovery phase.
 

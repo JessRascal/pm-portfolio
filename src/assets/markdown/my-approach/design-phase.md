@@ -1,4 +1,4 @@
-# Design Phase
+#### Design Phase
 
 The next phase is using the knowledge I have gained from the discovery phase to come up with a design solution.
 

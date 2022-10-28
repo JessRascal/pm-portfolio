@@ -1,5 +1,13 @@
-# Introduction
+#### Introduction
 
-- Mention **user/customers** (explain my definitions and then stick to this throughout the steps).
-- Mention trying to give a structure but there are overlaps(particularly between discovery and design).
-- Mention how the process I describe is mainly focused on creating a new product but my approach is similar when creating a new feature for an existing product(just avoiding having to write “product/feature” everywhere)....
+In the following slides, I try to explain my general end-to-end approach for taking a new product from idea to delivery.
+
+Obviously, every product is unique with a lot of variables, but hopefully this will give you an idea of how I approach things.
+
+Some things to keep in mind:
+
+- I reference creating a new product throughout but I apply a similar approach to new features for an existing product.
+- I've structured my approach in phases and steps, but in reality things don't tend to be quite so linear.
+- I use "customer" and "user" interchangably here even though that's not necessarily the case.
+
+Let's go...

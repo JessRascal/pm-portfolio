@@ -8,8 +8,24 @@
     @apply mb-2.5 md:mb-4 text-4xl hd:text-5xl text-primary;
   }
 
+  h3 {
+    @apply mb-1.5 md:mb-3 text-3xl hd:text-4xl text-primary;
+  }
+
+  h4 {
+    @apply mb-0.5 md:mb-2 text-2xl hd:text-3xl text-primary;
+  }
+
+  h5 {
+    @apply md:mb-1 text-xl hd:text-2xl text-primary;
+  }
+
   p {
     @apply mb-4;
+  }
+
+  ul {
+    @apply mb-4 pl-4 md:pl-8;
   }
 
   li {
@@ -34,8 +50,8 @@
 
 /* Custom markdown styles */
 /* TODO: How to style using Tailwind classes with @layer on .markdown-body? */
-/* .markdown-body {
-  color: theme('colors.high');
+/* .markdown-body h5 {
+  color: theme('colors.primary');
 } */
 
 /* .markdown-body blockquote { */

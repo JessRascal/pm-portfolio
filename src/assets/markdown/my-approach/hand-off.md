@@ -1,4 +1,4 @@
-# Hand-Off to the Development Team
+#### Hand-Off to the Development Team
 
 I will now brief the development team on what we are looking to create as we carry out our **Sprint Planning Meeting**.
 

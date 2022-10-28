@@ -65,7 +65,6 @@ Alpine.store('approach', {
     {
       number: 0,
       phase: null,
-      title: 'Introduction',
       markdownSrc: 'intro.md',
     },
     {
@@ -77,79 +76,66 @@ Alpine.store('approach', {
     {
       number: 2,
       phase: 'Discovery',
-      title: 'Define a Product Vision',
       markdownSrc: 'vision.md',
     },
     {
       number: 3,
       phase: 'Discovery',
-      title: 'Customer/User Research',
       markdownSrc: 'user-research.md',
     },
     {
       number: 4,
       phase: 'Discovery',
-      title: 'Customer/User Analysis',
       markdownSrc: 'user-analysis.md',
     },
     {
       number: 5,
       phase: 'Discovery',
-      title: 'Create a Product Strategy',
       markdownSrc: 'strategy.md',
     },
     {
       number: 6,
       phase: 'Discovery',
-      title: 'Create a Product Backlog',
       markdownSrc: 'backlog.md',
     },
     {
       number: 7,
       phase: null,
-      title: 'Design Phase',
       markdownSrc: 'design-phase.md',
     },
     {
       number: 8,
       phase: 'Design',
-      title: 'Create the Wireframes',
       markdownSrc: 'wireframes.md',
     },
     {
       number: 9,
       phase: 'Design',
-      title: 'Create the Mockups / Prototype',
       markdownSrc: 'prototype.md',
     },
     {
       number: 10,
       phase: 'Design',
-      title: 'Carry Out Testing / Validation',
       markdownSrc: 'validation.md',
     },
     {
       number: 11,
       phase: null,
-      title: 'Product Delivery Phase',
       markdownSrc: 'delivery-phase.md',
     },
     {
       number: 12,
       phase: 'Delivery',
-      title: 'Hand-Off to the Development Team',
       markdownSrc: 'hand-off.md',
     },
     {
       number: 13,
       phase: 'Delivery',
-      title: 'Launch the Product',
       markdownSrc: 'launch.md',
     },
     {
       number: 14,
       phase: 'Delivery',
-      title: 'Gather Feedback and Track Metrics',
       markdownSrc: 'feedback.md',
     },
   ],
