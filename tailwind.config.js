@@ -7,6 +7,8 @@ module.exports = {
       screens: {
         hd: '1920px',
         '4k': '2500px',
+        touch: { raw: '(pointer: coarse)' },
+        'not-touch': { raw: '(pointer: fine)' },
       },
       colors: {
         // for text colours

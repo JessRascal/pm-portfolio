@@ -258,20 +258,20 @@
         <div
           class="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg hd:max-w-screen-2xl mx-auto py-8 relative"
         >
+          <!-- slide content -->
           <template
             x-for="(slide, index) in $store.approach.slides"
             :key="index"
           >
             <div
               x-show="$store.approach.currentSlide === index"
-              class="p-8 flex flex-col bg-transparent border border-slate-500/25 rounded-lg"
+              class="h-[40rem] lg:h-[29rem] p-8 flex flex-col bg-transparent border border-slate-500/25 rounded-lg"
             >
               <!-- <h5 x-text="slide.title"></h5> -->
               <zero-md
                 :src="'assets/markdown/my-approach/' + slide.markdownSrc"
               >
                 <!-- apply own styles -->
-                <!-- <template data-merge="append"> -->
                 <template>
                   <link rel="stylesheet" href="css/output.css" />
                 </template>
@@ -321,7 +321,7 @@
           </div>
         </div>
         <small
-          class="hidden md:flex max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg hd:max-w-screen-2xl mx-auto mt-6 text-disabled"
+          class="hidden not-touch:flex max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg hd:max-w-screen-2xl mx-auto mt-6 text-disabled"
         >
           <strong>Tip</strong>: You can move through the slides using the arrow
           keys.
