@@ -258,9 +258,12 @@
         <div
           class="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg hd:max-w-screen-2xl mx-auto py-8 relative"
         >
-          <template x-for="slide in $store.approach.slides" :key="slide.number">
+          <template
+            x-for="(slide, index) in $store.approach.slides"
+            :key="index"
+          >
             <div
-              x-show="$store.approach.currentSlide === slide.number"
+              x-show="$store.approach.currentSlide === index"
               class="p-8 flex flex-col bg-transparent border border-slate-500/25 rounded-lg"
             >
               <!-- <h5 x-text="slide.title"></h5> -->
@@ -303,16 +306,16 @@
           <!-- step buttons -->
           <div class="absolute w-full flex items-center justify-center px-4">
             <template
-              x-for="slide in $store.approach.slides"
-              :key="slide.number"
+              x-for="(slide, index) in $store.approach.slides"
+              :key="index"
             >
               <button
                 class="flex-1 w-4 h-2 md:h-3 mt-4 mx-2 mb-0 rounded-full hover:bg-slate-600 hover:shadow-lg overflow-hidden transition-colors ease-out"
                 :class="{ 
-              'bg-primary': $store.approach.currentSlide === slide.number,
-              'bg-slate-500': $store.approach.currentSlide !== slide.number 
+              'bg-primary': $store.approach.currentSlide === index,
+              'bg-slate-500': $store.approach.currentSlide !== index 
           }"
-                x-on:click="$store.approach.currentSlide = slide.number"
+                x-on:click="$store.approach.currentSlide = index"
               ></button>
             </template>
           </div>

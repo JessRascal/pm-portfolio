@@ -67,12 +67,12 @@ Alpine.store('approach', {
       phase: null,
       markdownSrc: 'intro.md',
     },
-    {
-      number: 1,
-      phase: null,
-      title: 'Product Discovery Phase',
-      markdownSrc: 'discovery-phase.md',
-    },
+    // {
+    //   number: 1,
+    //   phase: null,
+    //   title: 'Product Discovery Phase',
+    //   markdownSrc: 'discovery-phase.md',
+    // },
     {
       number: 2,
       phase: 'Discovery',
@@ -98,11 +98,11 @@ Alpine.store('approach', {
       phase: 'Discovery',
       markdownSrc: 'backlog.md',
     },
-    {
-      number: 7,
-      phase: null,
-      markdownSrc: 'design-phase.md',
-    },
+    // {
+    //   number: 7,
+    //   phase: null,
+    //   markdownSrc: 'design-phase.md',
+    // },
     {
       number: 8,
       phase: 'Design',
@@ -118,11 +118,11 @@ Alpine.store('approach', {
       phase: 'Design',
       markdownSrc: 'validation.md',
     },
-    {
-      number: 11,
-      phase: null,
-      markdownSrc: 'delivery-phase.md',
-    },
+    // {
+    //   number: 11,
+    //   phase: null,
+    //   markdownSrc: 'delivery-phase.md',
+    // },
     {
       number: 12,
       phase: 'Delivery',
