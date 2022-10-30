@@ -5,31 +5,31 @@
 /* default base styles */
 @layer base {
   h2 {
-    @apply mb-2.5 md:mb-4 text-4xl hd:text-5xl text-primary;
+    @apply mb-2.5 md:mb-4 hd:mb-5 text-4xl hd:text-5xl text-primary;
   }
 
   h3 {
-    @apply mb-1.5 md:mb-3 text-3xl hd:text-4xl text-primary;
+    @apply mb-1.5 md:mb-3 hd:mb-4 text-3xl hd:text-4xl text-primary;
   }
 
   h4 {
-    @apply mb-0.5 md:mb-2 text-2xl hd:text-3xl text-primary;
+    @apply mb-0.5 md:mb-2 hd:mb-3 text-2xl hd:text-3xl text-primary;
   }
 
   h5 {
-    @apply md:mb-1 text-xl hd:text-2xl text-primary;
+    @apply md:mb-1 hd:mb-2 text-xl hd:text-2xl text-primary;
   }
 
   p {
-    @apply mb-4;
+    @apply mb-4 hd:mb-6;
   }
 
   ul {
-    @apply mb-4 pl-4;
+    @apply mb-4 hd:mb-6 pl-8 md:pl-12 hd:pl-16;
   }
 
   li {
-    @apply list-disc list-inside;
+    @apply list-disc list-outside;
   }
 
   blockquote {
@@ -39,6 +39,10 @@
   code {
     @apply py-1 px-2 m-0 rounded text-sm md:text-lg hd:text-2xl text-highlight bg-slate-500/25 font-mono;
   }
+
+  mark {
+    @apply bg-primary-light;
+  }
 }
 
 /* element specific */
@@ -47,16 +51,3 @@
     @apply min-h-screen p-6 md:px-12 lg:px-16 hd:px-32 md:py-16 lg:pt-12;
   }
 }
-
-/* Custom markdown styles */
-/* TODO: How to style using Tailwind classes with @layer on .markdown-body? */
-/* .markdown-body h5 {
-  color: theme('colors.primary');
-} */
-
-/* .markdown-body blockquote { */
-/* padding: 0 1rem; */
-/* font-size: 90%; */
-/* color: theme('colors.medium'); */
-/* border-left: 0.25rem solid theme('colors.primary'); */
-/* } */
