@@ -22,5 +22,6 @@ module.exports = {
       },
     },
   },
+  safelist: ['text-primary-light'],
   plugins: [],
 };

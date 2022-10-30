@@ -1,6 +1,6 @@
 It's now time for the development team to take the lead.
 
-To get them started, we have a **Sprint Planning Meeting** where we:
+To get them started, we have a <span class="text-primary-light">Sprint Planning Meeting</span> where we:
 
 - Review the user stories in priority order
 - Create tasks with estimated times for each user story
