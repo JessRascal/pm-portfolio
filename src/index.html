@@ -256,7 +256,7 @@
         <h2>My Approach</h2>
         <!-- Slides -->
         <div
-          class="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg hd:max-w-screen-2xl mx-auto py-6 relative"
+          class="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg hd:max-w-screen-2xl 4k:max-w-screen-4xl mx-auto py-6 relative"
         >
           <!-- slide content -->
           <template
@@ -265,7 +265,7 @@
           >
             <div
               x-show="$store.approach.currentSlide === index"
-              class="min-h-[40rem] lg:min-h-[29.5rem] hd:min-h-[40rem] 4k:min-h-[44rem] py-6 px-10 flex flex-col bg-transparent border border-slate-500/25 rounded-lg"
+              class="min-h-[40rem] lg:min-h-[29.5rem] hd:min-h-[40rem] 4k:min-h-[44rem] py-6 px-10 hd:py-8 4k:p-12 flex flex-col bg-transparent border border-slate-500/25 rounded-lg"
             >
               <div class="md:flex items-center justify-between mb-4 hd:mb-6">
                 <h4 class="mb-0" x-text="slide.title"></h4>
@@ -327,7 +327,7 @@
           </div>
         </div>
         <small
-          class="hidden not-touch:flex max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg hd:max-w-screen-2xl mx-auto mt-6 text-disabled"
+          class="hidden not-touch:flex max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg hd:max-w-screen-2xl mx-auto mt-6 hd:mt-12 text-disabled"
         >
           <strong>Tip</strong>: You can move through the slides using the arrow
           keys.

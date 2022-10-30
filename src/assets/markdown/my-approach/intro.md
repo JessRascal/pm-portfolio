@@ -5,7 +5,7 @@ Obviously, every product is unique with a lot of variables, but hopefully this w
 Some things to keep in mind:
 
 - I reference creating a new product throughout (including in the above) but I apply a similar approach to new features for an existing product.
-- I've structured my approach in phases and steps, but in reality things aren't always so linear.
-- I use "customer" and "user" interchangably here, even though that's not necessarily the case.
+- I've structured my approach in distinct phases/steps, but in reality there can be overlap.
+- I use "customer" and "user" interchangably to keep things simple.
 
 So on to step 1...

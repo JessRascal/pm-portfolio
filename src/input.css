@@ -5,23 +5,23 @@
 /* default base styles */
 @layer base {
   h2 {
-    @apply mb-2.5 md:mb-4 hd:mb-5 text-4xl hd:text-5xl 4k:text-6xl text-primary;
+    @apply mb-2.5 md:mb-4 hd:mb-5 4k:mb-6 text-4xl hd:text-5xl 4k:text-6xl text-primary;
   }
 
   h3 {
-    @apply mb-1.5 md:mb-3 hd:mb-4 text-3xl hd:text-4xl 4k:text-5xl text-primary;
+    @apply mb-1.5 md:mb-3 hd:mb-4 4k:mb-5 text-3xl hd:text-4xl 4k:text-5xl text-primary;
   }
 
   h4 {
-    @apply mb-0.5 md:mb-2 hd:mb-3 text-2xl hd:text-3xl 4k:text-4xl text-primary;
+    @apply mb-0.5 md:mb-2 hd:mb-3 4k:mb-4 text-2xl hd:text-3xl 4k:text-4xl text-primary;
   }
 
   h5 {
-    @apply md:mb-1 hd:mb-2 text-xl hd:text-2xl 4k:text-3xl text-primary;
+    @apply md:mb-1 hd:mb-2 4k:mb-3 text-xl hd:text-2xl 4k:text-3xl text-primary;
   }
 
   p {
-    @apply mb-4 hd:mb-6;
+    @apply mb-4 hd:mb-6 4k:mb-7;
   }
 
   ul {
