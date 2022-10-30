@@ -1,5 +1,3 @@
-#### Define a Product Vision
-
 I begin by defining the product's vision.
 
 It's my responsibility to define the vision, but all internal stakeholders will be involved in creating it.

@@ -1,5 +1,3 @@
-#### Create a Product Backlog
-
 The items in the product roadmap need to be broken down into small chunks by creating **user stories** for each.
 
 I write each user story in plain English so that it is easily understood by all stakeholders. I also like to stick to a strict **who**/**what**/**why** format.

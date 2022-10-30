@@ -1,5 +1,3 @@
-#### Launch the Product
-
 And we’re off.
 
 It’s finally time to deploy the product so that our users can use it.

@@ -1,5 +1,3 @@
-#### User and Market Research
-
 Next up is understanding the customers' processes, their pain points, and what solutions are available.
 
 This is probably the most important step in the whole process. I believe it’s critical to understand what the customer is trying to achieve and what problems they are facing.

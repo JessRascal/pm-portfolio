@@ -1,5 +1,3 @@
-#### Hand-Off to the Development Team
-
 It's now time for the development team to take the lead.
 
 To get them started, we have a **Sprint Planning Meeting** where we:

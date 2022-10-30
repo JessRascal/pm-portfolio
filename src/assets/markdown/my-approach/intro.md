@@ -1,5 +1,3 @@
-#### Introduction
-
 In the following slides, I describe my general end-to-end approach for taking a new product from idea to delivery.
 
 Obviously, every product is unique with a lot of variables, but hopefully this will give you an idea of how I approach things.
