@@ -4,6 +4,9 @@
 
 /* default base styles */
 @layer base {
+  h1 {
+    @apply mb-3.5 md:mb-5 hd:mb-6 4k:mb-7 text-5xl md:text-6xl lg:text-7xl hd:text-9xl leading-tight md:leading-tight lg:leading-tight xl:leading-tight 2xl:leading-tight hd:leading-tight 4k:leading-tight text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-200;
+  }
   h2 {
     @apply mb-2.5 md:mb-4 hd:mb-5 4k:mb-6 text-4xl hd:text-5xl 4k:text-6xl text-primary;
   }
@@ -48,6 +51,6 @@
 /* element specific */
 @layer components {
   .section-wrapper {
-    @apply min-h-screen p-6 md:px-12 lg:px-16 hd:px-32 md:py-16 lg:pt-12;
+    @apply max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl hd:max-w-screen-hd 4k:max-w-screen-4k min-h-screen scroll-mt-14 4k:scroll-mt-16 px-4 hd:px-32 4k:px-64 py-8 md:py-16 lg:pt-12 xl:pt-16 2xl:pt-20 hd:pt-24 4k:pt-32 border-b border-slate-500/25;
   }
 }

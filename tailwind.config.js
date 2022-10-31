@@ -3,6 +3,9 @@ const colors = require('tailwindcss/colors');
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       screens: {
         hd: '1920px',
