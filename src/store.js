@@ -124,3 +124,21 @@ Alpine.store('approach', {
     },
   ],
 });
+
+// CASE STUDIES
+Alpine.store('cases', {
+  products: [
+    {
+      title: 'Ops Suite',
+      titleUrl:
+        'https://www.rts-solutions.net/work-preparation-logistics-arrangement-work-management',
+      vision: '???',
+      status: 'Growth',
+      type: 'SaaS (B2B)',
+      platform: 'Web',
+      stack: ['ASP.NET Core MVC', 'Vue', 'SASS'],
+      imageSrc: 'https://via.placeholder.com/300',
+      markdownSrc: 'ops-suite.md',
+    },
+  ],
+});

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/output.css" rel="stylesheet" />
+    <script src="../js/bundle.js" defer></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
+    ></script>
+    <title>Michael Jessey | Case Studies</title>
+  </head>
+  <body>
+    <!-- TODO: INSERT NAV -->
+    <main class="container px-8">
+      <section
+        class="min-h-screen py-16 xl:grid xl:grid-cols-12 xl:gap-x-16 hd:gap-x-24"
+      >
+        <div class="xl:col-span-5 xl:order-2 xl:mt-24">
+          <img
+            src="https://via.placeholder.com/300"
+            alt="A screenshot of Ops Suite on a desktop screen"
+            class="mx-auto xl:mx-0"
+          />
+        </div>
+        <div
+          class="max-w-prose mx-auto xl:mx-0 xl:col-span-7 xl:justify-self-end xl:order-1"
+        >
+          <zero-md src="../assets/markdown/case-studies/ops-suite.md">
+            <!-- apply own styles -->
+            <template>
+              <link rel="stylesheet" href="../css/output.css" />
+            </template>
+          </zero-md>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
