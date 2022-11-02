@@ -4,8 +4,8 @@ This is probably the most important step in the whole process. I believe it’s 
 
 The techniques I use to identify these things can vary based on the product, customer, etc, but I will generally do the following:
 
-- Customer interviews
-- Stakeholder workshops
-- Surveys
-- Shadowing/site visits
-- Competitor Analysis
+- **Customer interviews**
+- **Stakeholder workshops**
+- **Surveys**
+- **Shadowing/site visits**
+- **Competitor Analysis**

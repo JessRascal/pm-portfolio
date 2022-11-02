@@ -2,9 +2,9 @@ Collecting all of the qualitative and quantitative research data in the last ste
 
 To do this, I will create things like:
 
-- Process maps
-- User personas
-- User journey maps
-- Empathy maps
+- **Process maps**
+- **User personas**
+- **User journey maps**
+- **Empathy maps**
 
 Creating these types of documents helps me make sense of the research data, but they are also useful for explaining things to stakeholders.
