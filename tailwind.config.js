@@ -15,9 +15,10 @@ module.exports = {
       },
       colors: {
         // for text colours
-        high: 'rgba(255, 255, 255, 0.87)',
-        medium: 'rgba(255, 255, 255, 0.6)',
-        disabled: 'rgba(255, 255, 255, 0.38)',
+        heading: colors.slate[50],
+        high: colors.slate[300],
+        medium: colors.slate[400],
+        disabled: colors.slate[500],
         primary: colors.amber[400],
         'primary-light': colors.amber[200],
         'primary-dark': colors.amber[600],
