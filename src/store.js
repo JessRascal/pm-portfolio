@@ -128,7 +128,8 @@ Alpine.store('approach', {
 // CASE STUDIES
 Alpine.store('cases', {
   opsSuite: {
-    imageSrc: 'https://via.placeholder.com/300',
+    imageSrc: '../assets/ops-suite-work-management-cropped-680w.png',
+    imageAlt: 'A cropped image showing part of the Ops Screen app',
     vision: '???',
     status: 'Growth',
     type: 'SaaS (B2B)',
@@ -139,7 +140,9 @@ Alpine.store('cases', {
   },
 
   opsSuiteMobile: {
-    imageSrc: 'https://via.placeholder.com/300',
+    imageSrc: '../assets/ops-suite-mobile-mockup-cropped-412w.png',
+    imageAlt:
+      'A cropped image showing part of a mockup of the Ops Suite Mobile app',
     vision: '???',
     status: 'Discovery Phase (work in progress)',
     type: 'SaaS (B2B)',
@@ -149,7 +152,8 @@ Alpine.store('cases', {
   },
 
   ssowps: {
-    imageSrc: 'https://via.placeholder.com/300',
+    imageSrc: '../assets/ssowps-plans-cropped-680w.png',
+    imageAlt: 'A cropped image showing part of the SSoWPS app',
     vision: 'N/A',
     status: 'Maintenance',
     type: 'Bespoke Self-Hosted',
@@ -159,7 +163,8 @@ Alpine.store('cases', {
   },
 
   nudge: {
-    imageSrc: 'https://via.placeholder.com/300',
+    imageSrc: '../assets/nudge-board-mockup-cropped-680w.png',
+    imageAlt: 'A cropped image showing part of a mockup of the Nudge app',
     vision:
       'Simplify, centralise, and standardise customer support for small tech companies.',
     status: 'Discovery Phase (work in progress)',

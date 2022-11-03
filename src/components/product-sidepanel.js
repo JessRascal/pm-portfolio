@@ -13,8 +13,8 @@ class ProductSidepanel extends HTMLElement {
       <aside class="text-right text-medium">
         <img
           :src="imageSrc"
-          alt="A screenshot of Ops Suite on a desktop screen"
-          class="mx-auto xl:mx-0"
+          :alt="imageAlt"
+          class="mx-auto xl:mx-0 rounded"
         />
         <!-- <div class="hidden md:flex justify-end">
           <img
@@ -51,7 +51,7 @@ class ProductSidepanel extends HTMLElement {
           </div>
 
           <div x-show="websiteUrl" class="mt-6">
-            <a :href="websiteUrl">Product Website</a>
+            <a :href="websiteUrl" target="_blank">Product Website</a>
           </div>
         </div>
       </aside>
