@@ -23,6 +23,7 @@ Throughout the delivery phase, I worked closely with the development team to ass
 - The apps have been in production for over 4 years
 - They are used by over `???` active users (`Daily? Weekly? Monthly?`)
 - `Number of work orders per week???`
+- `Managing the maintenance of X machines???`
 - We continue to rollout to additional business units within the customer’s business
 - We are also looking to rollout these applications out to other companies in the near future
 - This suite of applications now forms a substantial part of our company’s annual recurring revenue (ARR)
