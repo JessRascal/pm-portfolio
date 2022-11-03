@@ -4,10 +4,10 @@ import Alpine from 'alpinejs';
 Alpine.store('nav', {
   isSidePanelOpen: false,
   links: [
-    { text: 'About Me', url: '#about-me' },
-    { text: 'My Approach', url: '#my-approach' },
-    { text: 'Case Studies', url: '#case-studies' },
-    { text: 'Contact Me', url: '#contact-me' },
+    { text: 'About Me', url: '/index.html#about-me' },
+    { text: 'My Approach', url: '/index.html#my-approach' },
+    { text: 'Case Studies', url: '/index.html#case-studies' },
+    { text: 'Contact Me', url: '/index.html#contact-me' },
   ],
 });
 
@@ -127,20 +127,45 @@ Alpine.store('approach', {
 
 // CASE STUDIES
 Alpine.store('cases', {
-  products: [
-    {
-      title: 'Ops Suite',
-      titleUrl:
-        'https://www.rts-solutions.net/work-preparation-logistics-arrangement-work-management',
-      vision: '???',
-      status: 'Growth',
-      type: 'SaaS (B2B)',
-      platform: 'Web',
-      stack: ['ASP.NET Core MVC', 'Vue', 'SASS'],
-      homepageUrl:
-        'https://www.rts-solutions.net/work-preparation-logistics-arrangement-work-management',
-      imageSrc: 'https://via.placeholder.com/300',
-      markdownSrc: 'ops-suite.md',
-    },
-  ],
+  opsSuite: {
+    imageSrc: 'https://via.placeholder.com/300',
+    vision: '???',
+    status: 'Growth',
+    type: 'SaaS (B2B)',
+    platform: 'Web',
+    stack: ['ASP.NET Core MVC', 'Vue', 'SASS'],
+    websiteUrl:
+      'https://www.rts-solutions.net/work-preparation-logistics-arrangement-work-management',
+  },
+
+  opsSuiteMobile: {
+    imageSrc: 'https://via.placeholder.com/300',
+    vision: '???',
+    status: 'Discovery Phase (work in progress)',
+    type: 'SaaS (B2B)',
+    platform: 'Mobile (native)',
+    stack: ['Flutter', 'iOS', 'Android'],
+    websiteUrl: false,
+  },
+
+  ssowps: {
+    imageSrc: 'https://via.placeholder.com/300',
+    vision: 'N/A',
+    status: 'Maintenance',
+    type: 'Bespoke Self-Hosted',
+    platform: 'Web',
+    stack: ['ASP.NET MVC'],
+    websiteUrl: false,
+  },
+
+  nudge: {
+    imageSrc: 'https://via.placeholder.com/300',
+    vision:
+      'Simplify, centralise, and standardise customer support for small tech companies.',
+    status: 'Discovery Phase (work in progress)',
+    type: 'SaaS (B2B/B2C)',
+    platform: 'Web',
+    stack: ['Firebase Firestore', 'Vue'],
+    websiteUrl: false,
+  },
 });

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/output.css" rel="stylesheet" />
+    <script src="../js/bundle.js" defer></script>
+    <script src="../components/product-sidepanel.js" defer></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
+    ></script>
+    <title>Case Study: Ops Suite | Michael Jessey | Product Manager</title>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <main class="container mt-14 px-8">
+      <section class="product-section">
+        <div class="product-col-1">
+          <product-sidepanel
+            x-data="product = $store.cases.opsSuite"
+          ></product-sidepanel>
+        </div>
+        <div class="product-col-2">
+          <zero-md src="../assets/markdown/case-studies/ops-suite.md">
+            <!-- apply own styles -->
+            <template>
+              <link rel="stylesheet" href="../css/output.css" />
+            </template>
+          </zero-md>
+        </div>
+      </section>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>
