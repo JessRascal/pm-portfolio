@@ -10,7 +10,7 @@
     "alpine-dev": "npx -y esbuild src/index.js --outfile=src/js/bundle.js --bundle --sourcemap --watch",
     "tailwind-build": "npx -y tailwindcss -i src/input.css -o dist/css/output.css --minify",
     "tailwind-dev": "npx -y tailwindcss -i src/input.css -o src/css/output.css --watch",
-    "html-build": "npx -y shx cp -r src/**/*.html dist",
+    "html-build": "npx -y copyfiles -u 1 src/*.html src/**/*.html dist",
     "assets-build": "npx -y shx cp -r src/assets dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "npx -y rimraf dist"
