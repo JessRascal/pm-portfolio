@@ -38,7 +38,7 @@
                 <a
                   x-bind:href="link.url"
                   x-text="link.text"
-                  class="block py-2 pr-4 pl-3 bg-transparent text-medium hover:text-high rounded md:p-0"
+                  class="text-medium no-underline"
                   rel="noopener"
                 ></a>
               </div>
@@ -116,7 +116,7 @@
               <a
                 x-bind:href="link.url"
                 x-text="link.text"
-                class="block py-2 px-3 text-medium hover:text-high rounded md:p-0"
+                class="block py-2 px-3 text-medium no-underline"
                 rel="noopener"
                 @click="$store.nav.isSidePanelOpen = false"
               ></a>
@@ -129,7 +129,7 @@
               <a
                 x-bind:href="link.url"
                 x-text="link.text"
-                class="block py-2 px-3 text-medium hover:text-high rounded md:p-0"
+                class="block py-2 px-3 text-medium no-underline"
                 rel="noopener"
                 @click="$store.nav.isSidePanelOpen = false"
               ></a>
@@ -138,7 +138,7 @@
               <a
                 x-bind:href="link.url"
                 x-text="link.text"
-                class="block py-2 px-3 text-medium hover:text-high rounded md:p-0"
+                class="block py-2 px-3 text-medium no-underline"
                 rel="noopener"
                 @click="$store.nav.isSidePanelOpen = false"
               ></a>
@@ -196,7 +196,6 @@
                       <a
                         x-bind:href="item.url"
                         x-text="item.text"
-                        class="underline underline-offset-4 hover:text-high"
                         target="_blank"
                         rel="noopener"
                       ></a>
@@ -336,7 +335,6 @@
         <div class="md:col-span-2 md:text-right">
           <a
             href="https://github.com/JessRascal/pm-portfolio"
-            class="underline underline-offset-4"
             target="_blank"
             rel="noopener"
             >Copy this site on GitHub</a
@@ -346,25 +344,13 @@
           Designed and developed by me
           <div class="text-disabled">
             <span>(with help from</span>
-            <a
-              href="https://tailwindcss.com/"
-              class="underline underline-offset-4"
-              target="_blank"
-              rel="noopener"
+            <a href="https://tailwindcss.com/" target="_blank" rel="noopener"
               >Tailwindcss</a
             ><span>,</span>
-            <a
-              href="https://alpinejs.dev/"
-              class="underline underline-offset-4"
-              target="_blank"
-              rel="noopener"
+            <a href="https://alpinejs.dev/" target="_blank" rel="noopener"
               >Alpine.js</a
             ><span>, and</span>
-            <a
-              href="https://www.netlify.com/"
-              class="underline underline-offset-4"
-              target="_blank"
-              rel="noopener"
+            <a href="https://www.netlify.com/" target="_blank" rel="noopener"
               >Netlify</a
             ><span>)</span>
           </div>

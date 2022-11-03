@@ -137,6 +137,8 @@ Alpine.store('cases', {
       type: 'SaaS (B2B)',
       platform: 'Web',
       stack: ['ASP.NET Core MVC', 'Vue', 'SASS'],
+      homepageUrl:
+        'https://www.rts-solutions.net/work-preparation-logistics-arrangement-work-management',
       imageSrc: 'https://via.placeholder.com/300',
       markdownSrc: 'ops-suite.md',
     },

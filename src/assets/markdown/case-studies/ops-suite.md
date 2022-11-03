@@ -1,20 +1,16 @@
-# [Ops Suite](https://www.rts-solutions.net/work-preparation-logistics-arrangement-work-management)
+# Ops Suite
 
 Ops Suite is a collection of web apps that are specifically designed to assist railway maintenance companies with their planning, resourcing, and delivering of work on the UK rail infrastructure.
 
-##### Problem
+#### Problem
 
-`TODO: Change into more of a paragraph`
+The client was facing **issues with sharing up-to-date information** across their different departments. This was leading to instances of people working from outdated data.
 
-The client had been facing issues with sharing information across their different departments.
+They also had problems with **time-consuming manual processes** such as managing their workload and machine maintenance schedules. This was having a major financial impact.
 
-They needed a way for everyone to be able to access a centralised up to date source.
+Another area of concern was making sure they were sticking to the terms and conditions of their employees' contracts when it came to assigning them to jobs.
 
-They were also facing issues with inefficient manual processes such as processing their workload from their clients.
-
-This was having a major financial impact.
-
-##### My Role
+#### My Role
 
 As the **product manager** and **designer**, I worked closely with the customer to understand their existing processes and identify their problems.
 
@@ -22,7 +18,7 @@ I used this information to formulate a product strategy that included creating a
 
 Throughout the delivery phase, I worked closely with the development team to assist with technical challenges.
 
-##### Outcome
+#### Outcome
 
 - The apps have been in production for over 4 years
 - They are used by over `???` active users (`Daily? Weekly? Monthly?`)
