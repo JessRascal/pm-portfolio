@@ -17,14 +17,14 @@
   </head>
   <body>
     <navbar-component></navbar-component>
-    <main class="container mt-14 px-8">
+    <main class="product-container">
       <section class="product-section">
-        <div class="product-col-1">
+        <div class="product-meta">
           <product-sidepanel
             x-data="product = $store.cases.opsSuiteMobile"
           ></product-sidepanel>
         </div>
-        <div class="product-col-2">
+        <div class="product-text">
           <zero-md src="../assets/markdown/case-studies/ops-suite-mobile.md">
             <!-- apply own styles -->
             <template>

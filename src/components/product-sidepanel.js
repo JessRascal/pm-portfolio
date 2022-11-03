@@ -16,21 +16,6 @@ class ProductSidepanel extends HTMLElement {
           :alt="imageAlt"
           class="mx-auto xl:mx-0 rounded"
         />
-        <!-- <div class="hidden md:flex justify-end">
-          <img
-            srcset="
-              assets/me-and-kodi-cropped-200x200.jpg 200w,
-              assets/me-and-kodi-cropped-300x300.jpg 300w
-            "
-            sizes="
-              (min-width: 1920px) 300px,
-              (min-width: 2500px) 300px,
-              200px"
-            src="assets/me-and-kodi-cropped-200x200.jpg"
-            alt="Me smiling while holding my mum's dog, Kodi"
-            class="rounded-lg"
-          />
-        </div> -->
         <div class="mt-4 hd:mt-8">
           <h6 class="uppercase text-disabled">Product Vision</h6>
           <div x-text="vision"></div>

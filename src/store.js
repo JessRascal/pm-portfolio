@@ -144,7 +144,7 @@ Alpine.store('cases', {
     imageAlt:
       'A cropped image showing part of a mockup of the Ops Suite Mobile app',
     vision: '???',
-    status: 'Discovery Phase (work in progress)',
+    status: 'Discovery Phase',
     type: 'SaaS (B2B)',
     platform: 'Mobile (native)',
     stack: ['Flutter', 'iOS', 'Android'],
@@ -167,7 +167,7 @@ Alpine.store('cases', {
     imageAlt: 'A cropped image showing part of a mockup of the Nudge app',
     vision:
       'Simplify, centralise, and standardise customer support for small tech companies.',
-    status: 'Discovery Phase (work in progress)',
+    status: 'Discovery Phase',
     type: 'SaaS (B2B/B2C)',
     platform: 'Web',
     stack: ['Firebase Firestore', 'Vue'],
