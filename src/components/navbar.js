@@ -39,7 +39,7 @@ class Navbar extends HTMLElement {
               type="button"
               class="inline-flex items-center p-2 text-high rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-controls="navbar-sticky"
-              aria-expanded="false"
+              aria-expanded="$store.nav.isSidePanelOpen"
               @click="$store.nav.isSidePanelOpen = true"
             >
               <span class="sr-only">Open navigation</span>
