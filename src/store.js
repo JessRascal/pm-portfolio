@@ -140,7 +140,7 @@ Alpine.store('cases', {
   },
 
   opsSuiteMobile: {
-    imageSrc: '../assets/ops-suite-mobile-mockup-cropped-412w.png',
+    imageSrc: '../assets/ops-suite-mobile-mockup-cropped-410w.png',
     imageAlt:
       'A cropped image showing part of a mockup of the Ops Suite Mobile app',
     vision: '???',

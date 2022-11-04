@@ -10,33 +10,43 @@ class ProductSidepanel extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-      <aside class="text-right text-medium">
+      <aside class="text-base xl:text-lg xl:text-right text-medium">
         <img
           :src="imageSrc"
           :alt="imageAlt"
           class="mx-auto xl:mx-0 rounded"
         />
-        <div class="mt-4 hd:mt-8">
-          <h6 class="uppercase text-disabled">Product Vision</h6>
-          <div x-text="vision"></div>
-
-          <h6 class="uppercase text-disabled">Status</h6>
-          <div x-text="status"></div>
-
-          <h6 class="uppercase text-disabled">Type</h6>
-          <div x-text="type"></div>
-
-          <h6 class="uppercase text-disabled">Platform</h6>
-          <div x-text="platform"></div>
-          
-          <div class="mt-4 mb-px">
-            <template x-for="tech in stack" :key="$id">
-              <span class="ml-2 py-1.5 px-2.5 align-baseline text-xs text-high font-semibold text-center leading-none bg-slate-700 rounded whitespace-nowrap" x-text="tech"></span>
-            </template>
+        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-2 xl:gap-y-2 xl:mt-2">
+          <div class="col-span-full md:col-span-2 xl:col-span-full">
+            <h6 class="uppercase text-disabled">Product Vision</h6>
+            <div x-text="vision"></div>
           </div>
 
-          <div x-show="websiteUrl" class="mt-6">
-            <a :href="websiteUrl" target="_blank">Product Website</a>
+          <div class="md:text-right">
+            <h6 class="uppercase text-disabled">Status</h6>
+            <div x-text="status"></div>
+          </div>
+
+          <div class="text-right md:text-left xl:text-right">
+            <h6 class="uppercase text-disabled">Type</h6>
+            <div x-text="type"></div>
+          </div>
+
+          <div class="md:col-span-2 xl:col-span-1 md:text-right">
+            <h6 class="uppercase text-disabled">Platform</h6>
+            <div x-text="platform"></div>
+          </div>
+
+          <div class="text-right md:text-left xl:text-right">
+            <h6 class="uppercase text-disabled">More Info.</h6>
+            <a x-show="websiteUrl" :href="websiteUrl" target="_blank">Product Website</a>
+            <div x-show="!websiteUrl">N/A</div>
+          </div>
+          
+          <div class="col-span-full md:col-span-2 md:text-right mt-4 mb-px">
+            <template x-for="tech in stack" :key="$id">
+              <span class="mr-2 md:mr-0 md:ml-2 py-1.5 px-2.5 align-baseline text-xs text-high font-semibold text-center leading-none bg-slate-700 rounded whitespace-nowrap" x-text="tech"></span>
+            </template>
           </div>
         </div>
       </aside>
