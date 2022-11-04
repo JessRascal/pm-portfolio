@@ -17,7 +17,7 @@ class Footer extends HTMLElement {
             href="https://github.com/JessRascal/pm-portfolio"
             target="_blank"
             rel="noopener"
-            >Copy this site on GitHub</a
+            >Copy this site from GitHub</a
           >
         </div>
         <div class="md:col-span-4 md:row-start-2 md:text-center">

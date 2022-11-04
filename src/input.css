@@ -46,7 +46,7 @@
   }
 
   a {
-    @apply underline underline-offset-4 hover:text-high active:text-primary;
+    @apply underline underline-offset-4 hover:text-high active:text-heading;
   }
 
   strong {
@@ -86,7 +86,7 @@
 
   .product-heading {
     /* TODO: Change so not using arbitrary margin value */
-    @apply 2xl:ml-32 hd:ml-[17.5rem] 4k:ml-[37.5rem];
+    @apply xl:ml-10 2xl:ml-32 hd:ml-[17.5rem] 4k:ml-[37.5rem];
   }
 
   .product-text {

@@ -19,6 +19,6 @@ A big focus of mine was to understand the complicated industry-specific processe
 #### Outcome
 
 - The client has been using this app in production for over 10 years
-- 15 million+ safe systems of work have been created using the app
-- There are over `???` active users (`Daily? Weekly? Monthly?`)
-- This app has generated millions in revenue for our company `Can I say this?`
+- 16 million+ safe systems of work have been created using the app
+- 1,500+ monthly active users
+- This app has generated substantial revenue for our company over its life cycle

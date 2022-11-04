@@ -19,8 +19,8 @@ Alpine.store('aside', {
       hasLinks: false,
       items: [
         { text: 'Product Management', value: '11yrs' },
-        { text: 'Product Design', value: '7yrs' }, // TODO: Better name?
-        // { text: 'Products Delivered', value: '15' }, // TODO: Better name?
+        { text: 'Product Design', value: '7yrs' },
+        // { text: 'Products Delivered', value: '15' },
         { text: 'Users Helped', value: '20k' },
       ],
     },
@@ -131,7 +131,8 @@ Alpine.store('cases', [
     name: 'Ops Suite',
     imageSrc: '../assets/ops-suite-work-management-cropped-680w.png',
     imageAlt: 'A cropped image showing part of the Ops Screen app',
-    vision: '???',
+    vision:
+      'A single location to manage work, people, and machines to allow successful completion of railway maintenance',
     status: 'Growth',
     type: 'SaaS (B2B)',
     platform: 'Web',
@@ -145,7 +146,7 @@ Alpine.store('cases', [
     imageSrc: '../assets/ops-suite-mobile-mockup-cropped-410w.png',
     imageAlt:
       'A cropped image showing part of a mockup of the Ops Suite Mobile app',
-    vision: '???',
+    vision: 'To prove simple real-time communication with site',
     status: 'Discovery Phase',
     type: 'SaaS (B2B)',
     platform: 'Mobile (native)',
@@ -157,7 +158,8 @@ Alpine.store('cases', [
     name: 'SSoWPS',
     imageSrc: '../assets/ssowps-plans-cropped-680w.png',
     imageAlt: 'A cropped image showing part of the SSoWPS app',
-    vision: 'N/A',
+    vision:
+      'Make it easier to ensure people are safe when working on the railway',
     status: 'Maintenance',
     type: 'Bespoke Self-Hosted',
     platform: 'Web',

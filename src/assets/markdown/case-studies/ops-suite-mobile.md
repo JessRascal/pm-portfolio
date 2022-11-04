@@ -12,8 +12,6 @@ We are still working on understanding their processes and identifying their key 
 
 As the **product manager**, I am currently focused on recruitment so that I can put together the required team to move forward with this product.
 
-`Include what my role will be?`
-
 #### Outcome
 
 Coming soon.
