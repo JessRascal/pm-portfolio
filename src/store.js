@@ -126,8 +126,9 @@ Alpine.store('approach', {
 });
 
 // CASE STUDIES
-Alpine.store('cases', {
-  opsSuite: {
+Alpine.store('cases', [
+  {
+    name: 'Ops Suite',
     imageSrc: '../assets/ops-suite-work-management-cropped-680w.png',
     imageAlt: 'A cropped image showing part of the Ops Screen app',
     vision: '???',
@@ -138,8 +139,8 @@ Alpine.store('cases', {
     websiteUrl:
       'https://www.rts-solutions.net/work-preparation-logistics-arrangement-work-management',
   },
-
-  opsSuiteMobile: {
+  {
+    name: 'Ops Suite Mobile',
     imageSrc: '../assets/ops-suite-mobile-mockup-cropped-410w.png',
     imageAlt:
       'A cropped image showing part of a mockup of the Ops Suite Mobile app',
@@ -150,8 +151,8 @@ Alpine.store('cases', {
     stack: ['Flutter', 'iOS', 'Android'],
     websiteUrl: false,
   },
-
-  ssowps: {
+  {
+    name: 'SSoWPS',
     imageSrc: '../assets/ssowps-plans-cropped-680w.png',
     imageAlt: 'A cropped image showing part of the SSoWPS app',
     vision: 'N/A',
@@ -161,8 +162,8 @@ Alpine.store('cases', {
     stack: ['ASP.NET MVC'],
     websiteUrl: false,
   },
-
-  nudge: {
+  {
+    name: 'Nudge',
     imageSrc: '../assets/nudge-board-mockup-cropped-680w.png',
     imageAlt: 'A cropped image showing part of a mockup of the Nudge app',
     vision:
@@ -173,4 +174,4 @@ Alpine.store('cases', {
     stack: ['Firebase Firestore', 'Vue'],
     websiteUrl: false,
   },
-});
+]);

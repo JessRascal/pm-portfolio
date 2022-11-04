@@ -86,7 +86,7 @@
 
   .product-heading {
     /* TODO: Change so not using arbitrary margin value */
-    @apply 2xl:ml-32 hd:ml-72 4k:ml-[37.5rem];
+    @apply 2xl:ml-32 hd:ml-[17.5rem] 4k:ml-[37.5rem];
   }
 
   .product-text {

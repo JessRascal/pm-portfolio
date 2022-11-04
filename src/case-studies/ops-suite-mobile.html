@@ -15,15 +15,13 @@
       Case Study: Ops Suite Mobile | Michael Jessey | Product Manager
     </title>
   </head>
-  <body>
+  <body x-data="product = $store.cases[1]">
     <navbar-component></navbar-component>
     <main class="product-container">
-      <h1 class="product-heading">Ops Suite Mobile</h1>
+      <h1 class="product-heading" x-text="product.name"></h1>
       <section class="product-section">
         <div class="product-meta">
-          <product-sidepanel
-            x-data="product = $store.cases.opsSuiteMobile"
-          ></product-sidepanel>
+          <product-sidepanel></product-sidepanel>
         </div>
         <div class="product-text">
           <zero-md src="../assets/markdown/case-studies/ops-suite-mobile.md">

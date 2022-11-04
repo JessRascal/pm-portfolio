@@ -13,15 +13,13 @@
     ></script>
     <title>Case Study: Nudge | Michael Jessey | Product Manager</title>
   </head>
-  <body>
+  <body x-data="product = $store.cases[3]">
     <navbar-component></navbar-component>
     <main class="product-container">
-      <h1 class="product-heading">Nudge</h1>
+      <h1 class="product-heading" x-text="product.name"></h1>
       <section class="product-section">
         <div class="product-meta">
-          <product-sidepanel
-            x-data="product = $store.cases.nudge"
-          ></product-sidepanel>
+          <product-sidepanel></product-sidepanel>
         </div>
         <div class="product-text">
           <zero-md src="../assets/markdown/case-studies/nudge.md">
