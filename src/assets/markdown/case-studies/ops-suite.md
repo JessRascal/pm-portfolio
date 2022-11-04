@@ -1,5 +1,3 @@
-# Ops Suite
-
 Ops Suite is a collection of web apps that are specifically designed to assist railway maintenance companies with their planning, resourcing, and delivering of work on the UK rail infrastructure.
 
 #### Problem

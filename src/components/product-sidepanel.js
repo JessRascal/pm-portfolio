@@ -10,13 +10,13 @@ class ProductSidepanel extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-      <aside class="text-base xl:text-lg xl:text-right text-medium">
+      <aside class="text-sm xl:text-base hd:text-lg xl:text-right text-medium">
         <img
           :src="imageSrc"
           :alt="imageAlt"
           class="mx-auto xl:mx-0 rounded"
         />
-        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-2 xl:gap-y-2 xl:mt-2">
+        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-2 xl:gap-y-2 hd:gap-x-10 xl:mt-2">
           <div class="col-span-full md:col-span-2 xl:col-span-full">
             <h6 class="uppercase text-disabled">Product Vision</h6>
             <div x-text="vision"></div>
@@ -43,7 +43,8 @@ class ProductSidepanel extends HTMLElement {
             <div x-show="!websiteUrl">N/A</div>
           </div>
           
-          <div class="col-span-full md:col-span-2 md:text-right mt-4 mb-px">
+          <div class="col-span-full md:col-span-2 md:text-right">
+          <h6 class="uppercase text-disabled mb-2">Tech</h6>
             <template x-for="tech in stack" :key="$id">
               <span class="mr-2 md:mr-0 md:ml-2 py-1.5 px-2.5 align-baseline text-xs text-high font-semibold text-center leading-none bg-slate-700 rounded whitespace-nowrap" x-text="tech"></span>
             </template>

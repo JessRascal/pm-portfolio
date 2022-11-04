@@ -1,5 +1,3 @@
-# Ops Suite Mobile
-
 This will be a native mobile app that will be an addition to our Ops Suite. It will be targeted specifically towards railway maintenance site workers.
 
 #### Problem

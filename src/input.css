@@ -18,7 +18,7 @@
   }
 
   h1 {
-    @apply mb-3.5 md:mb-5 hd:mb-6 4k:mb-7 text-4xl md:text-6xl lg:text-7xl hd:text-9xl leading-tight md:leading-tight lg:leading-tight xl:leading-tight 2xl:leading-tight hd:leading-tight 4k:leading-tight text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-200;
+    @apply mb-3.5 md:mb-5 hd:mb-6 4k:mb-7 text-5xl md:text-6xl lg:text-7xl hd:text-9xl leading-tight md:leading-tight lg:leading-tight xl:leading-tight 2xl:leading-tight hd:leading-tight 4k:leading-tight text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-200;
   }
 
   h1 > a {
@@ -77,11 +77,16 @@
   }
 
   .product-container {
-    @apply container mt-14 px-8 lg:pt-12 xl:pt-16 2xl:pt-20 hd:pt-24 4k:pt-32;
+    @apply container max-w-prose xl:max-w-none mt-14 p-8 md:pb-16 lg:pt-12 xl:pt-16 2xl:pt-20 hd:pt-24 4k:pt-32;
   }
 
   .product-section {
-    @apply min-h-screen xl:flex xl:justify-center py-8 md:pb-16;
+    @apply xl:flex xl:justify-center pt-8;
+  }
+
+  .product-heading {
+    /* TODO: Change so not using arbitrary margin value */
+    @apply 2xl:ml-32 hd:ml-72 4k:ml-[37.5rem];
   }
 
   .product-text {
@@ -89,6 +94,6 @@
   }
 
   .product-meta {
-    @apply xl:w-96 xl:order-2 xl:mt-52;
+    @apply xl:w-96 xl:order-2 mb-8 md:mb-12;
   }
 }

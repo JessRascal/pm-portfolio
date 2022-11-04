@@ -1,5 +1,3 @@
-# SSoWPS
-
 This is a bespoke application that was designed and developed for a large public sector railway company. Its goal is to assist in making sure track workers have a valid safe system of work in place.
 
 #### Problem

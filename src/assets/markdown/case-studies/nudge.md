@@ -1,5 +1,3 @@
-# Nudge
-
 **Nudge** will be a customer support solution aimed at small businesses that need to provide efficient support but don’t have dedicated support staff.
 
 This is a side project of mine.
