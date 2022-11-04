@@ -13,7 +13,7 @@
     ></script>
     <title>Case Study: Ops Suite | Michael Jessey | Product Manager</title>
   </head>
-  <body x-data="product = $store.cases[0]">
+  <body x-data="product = $store.cases[0], next = $store.cases[1]">
     <navbar-component></navbar-component>
     <main class="product-container">
       <h1 class="product-heading" x-text="product.name"></h1>
@@ -28,6 +28,13 @@
               <link rel="stylesheet" href="../css/output.css" />
             </template>
           </zero-md>
+          <div class="flex justify-end mt-8">
+            <a
+              :href="next.caseStudyUrl"
+              class="no-underline text-primary-light hover:text-primary text-2xl"
+              >View the next case study >>>
+            </a>
+          </div>
         </div>
       </section>
     </main>

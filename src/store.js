@@ -139,7 +139,7 @@ Alpine.store('cases', [
     stack: ['ASP.NET Core MVC', 'Vue', 'SASS'],
     websiteUrl:
       'https://www.rts-solutions.net/work-preparation-logistics-arrangement-work-management',
-    caseStudyUrl: 'case-studies/ops-suite.html',
+    caseStudyUrl: '/case-studies/ops-suite.html',
   },
   {
     name: 'Ops Suite Mobile',
@@ -152,7 +152,7 @@ Alpine.store('cases', [
     platform: 'Mobile (native)',
     stack: ['Flutter', 'iOS', 'Android'],
     websiteUrl: false,
-    caseStudyUrl: 'case-studies/ops-suite-mobile.html',
+    caseStudyUrl: '/case-studies/ops-suite-mobile.html',
   },
   {
     name: 'SSoWPS',
@@ -165,7 +165,7 @@ Alpine.store('cases', [
     platform: 'Web',
     stack: ['ASP.NET MVC'],
     websiteUrl: false,
-    caseStudyUrl: 'case-studies/ssowps.html',
+    caseStudyUrl: '/case-studies/ssowps.html',
   },
   {
     name: 'Nudge',
@@ -178,6 +178,6 @@ Alpine.store('cases', [
     platform: 'Web',
     stack: ['Firebase Firestore', 'Vue'],
     websiteUrl: false,
-    caseStudyUrl: 'case-studies/nudge.html',
+    caseStudyUrl: '/case-studies/nudge.html',
   },
 ]);

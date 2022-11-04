@@ -42,7 +42,7 @@
   }
 
   p {
-    @apply py-1;
+    @apply py-1 4k:py-2;
   }
 
   a {
@@ -58,15 +58,15 @@
   }
 
   li {
-    @apply py-1 list-disc list-outside;
+    @apply py-1 4k:py-1.5 list-disc list-outside;
   }
 
   blockquote {
-    @apply my-1 px-4 text-medium border-l-2 border-primary;
+    @apply my-1 4k:my-2 px-4 text-medium border-l-2 border-primary;
   }
 
   code {
-    @apply py-1 px-2 m-0 rounded text-highlight bg-slate-500/25 font-mono;
+    @apply py-1 4k:py-2 px-2 m-0 rounded text-highlight bg-slate-500/25 font-mono;
   }
 }
 
@@ -77,7 +77,7 @@
   }
 
   .product-container {
-    @apply container max-w-prose xl:max-w-none mt-14 p-8 md:pb-16 lg:pt-12 xl:pt-16 2xl:pt-20 hd:pt-24 4k:pt-32;
+    @apply container max-w-prose xl:max-w-none mt-14 p-8 md:pb-16 lg:py-12 xl:py-16 2xl:py-20 hd:py-24 4k:py-32;
   }
 
   .product-section {
@@ -86,7 +86,7 @@
 
   .product-heading {
     /* TODO: Change so not using arbitrary margin value */
-    @apply xl:ml-10 2xl:ml-32 hd:ml-[17.5rem] 4k:ml-[37.5rem];
+    @apply xl:ml-10 2xl:ml-32 hd:ml-[17.5rem] 4k:ml-[32.5rem];
   }
 
   .product-text {
