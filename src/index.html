@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/output.css" rel="stylesheet" />
     <script src="js/bundle.js" defer></script>
+    <script src="components/about-me-meta.js" defer></script>
     <script
       type="module"
       src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
@@ -33,56 +34,9 @@
             </h2>
           </div>
 
-          <!-- ASIDE -->
-          <aside
-            class="hidden md:block md:col-span-2 lg:col-span-1 row-span-2 text-right text-medium"
-          >
-            <div class="hidden md:flex justify-end">
-              <img
-                srcset="
-                  assets/me-and-kodi-cropped-200x200.jpg 200w,
-                  assets/me-and-kodi-cropped-300x300.jpg 300w
-                "
-                sizes="
-                  (min-width: 1920px) 300px,
-                  (min-width: 2500px) 300px,
-                  200px"
-                src="assets/me-and-kodi-cropped-200x200.jpg"
-                alt="Me smiling while holding my mum's dog, Kodi"
-                class="rounded-lg"
-              />
-            </div>
-            <template x-for="section in $store.aside.sections" :key="$id">
-              <div class="mt-4 hd:mt-8">
-                <h6
-                  class="mb-1 uppercase text-disabled"
-                  x-text="section.name"
-                ></h6>
-                <!-- section has links -->
-                <template x-if="section.hasLinks">
-                  <template x-for="item in section.items" :key="$id">
-                    <div class="grid mb-1">
-                      <a
-                        x-bind:href="item.url"
-                        x-text="item.text"
-                        target="_blank"
-                        rel="noopener"
-                      ></a>
-                    </div>
-                  </template>
-                </template>
-                <!-- section doesn't have links -->
-                <template x-if="!section.hasLinks">
-                  <template x-for="item in section.items" :key="$id">
-                    <div class="grid grid-cols-6 mb-1">
-                      <span class="col-span-5 mr-4" x-text="item.text"></span>
-                      <span x-text="item.value"></span>
-                    </div>
-                  </template>
-                </template>
-              </div>
-            </template>
-          </aside>
+          <div class="hidden md:block md:col-span-2 lg:col-span-1 row-span-2">
+            <about-me-meta></about-me-meta>
+          </div>
 
           <article class="md:col-span-4 lg:col-span-4">
             <h2>Hi</h2>

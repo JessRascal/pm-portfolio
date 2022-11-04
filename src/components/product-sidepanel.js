@@ -3,11 +3,6 @@ class ProductSidepanel extends HTMLElement {
     super();
   }
 
-  /*
-   * TODO:
-   *  - Figure out how to display this data on mobile
-   */
-
   connectedCallback() {
     this.innerHTML = `
       <aside class="text-sm xl:text-base hd:text-lg xl:text-right text-medium">
