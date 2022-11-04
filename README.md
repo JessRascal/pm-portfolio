@@ -1,6 +1,6 @@
-# tailwind-with-alpine-npm-template
+# My Product Manager Portfolio
 
-Starting point for a Tailwindcss and Alpine.js site (using NPM).
+This is my product manager portfolio.
 
 ## Getting Going
 
