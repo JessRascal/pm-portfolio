@@ -5,7 +5,7 @@
 /* default base styles */
 @layer base {
   body {
-    @apply text-lg hd:text-xl text-medium antialiased bg-gradient-to-br from-slate-900 to-slate-800;
+    @apply text-lg hd:text-xl 4k:text-2xl text-medium antialiased bg-gradient-to-br from-slate-900 to-slate-800;
   }
 
   h1,
@@ -73,7 +73,7 @@
 /* element specific */
 @layer components {
   .section-wrapper {
-    @apply max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl hd:max-w-screen-hd 4k:max-w-screen-4k min-h-screen scroll-mt-14 4k:scroll-mt-16 px-4 hd:px-32 4k:px-64 py-8 md:py-16 lg:pt-12 xl:pt-16 2xl:pt-20 hd:pt-24 4k:pt-32;
+    @apply max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl hd:max-w-screen-hd 4k:max-w-screen-4k scroll-mt-14 4k:scroll-mt-16 px-4 hd:px-32 4k:px-64 py-8 md:py-16 lg:pt-12 xl:pt-16 2xl:pt-20 hd:pt-24 4k:pt-32;
   }
 
   .product-container {

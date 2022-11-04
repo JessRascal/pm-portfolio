@@ -6,7 +6,7 @@ class AboutMeMetaData extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <aside
-          class="text-right text-medium"
+          class="text-base hd:text-lg 4k:text-xl text-right text-medium"
         >
           <div class="hidden md:flex justify-end">
             <img

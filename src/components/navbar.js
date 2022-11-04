@@ -6,7 +6,7 @@ class Navbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <nav
-        class="px-2 sm:px-4 py-2 fixed w-full z-20 top-0 left-0 bg-slate-800 border-b border-slate-500/25"
+        class="px-2 sm:px-4 py-2 fixed w-full z-20 top-0 left-0 bg-slate-900/90 border-b border-slate-500/25"
         x-data
       >
         <div
