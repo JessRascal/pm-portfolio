@@ -17,8 +17,11 @@ class Footer extends HTMLElement {
             href="https://github.com/JessRascal/pm-portfolio"
             target="_blank"
             rel="noopener"
-            >Copy this site from GitHub</a
-          >
+            class="flex items-center justify-center md:justify-end no-underline"
+            >
+              <span class="mr-1 underline">Steal this site</span>
+              <i class="ri-github-fill text-2xl"></i>
+          </a>
         </div>
         <div class="md:col-span-4 md:row-start-2 md:text-center">
           Designed and developed by me
@@ -29,6 +32,9 @@ class Footer extends HTMLElement {
             ><span>,</span>
             <a href="https://alpinejs.dev/" target="_blank" rel="noopener"
               >Alpine.js</a
+            ><span>,</span>
+            <a href="https://remixicon.com/" target="_blank" rel="noopener"
+              >Remix Icon</a
             ><span>, and</span>
             <a href="https://www.netlify.com/" target="_blank" rel="noopener"
               >Netlify</a

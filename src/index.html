@@ -10,6 +10,10 @@
       type="module"
       src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
     ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <title>Michael Jessey | Product Manager</title>
   </head>
   <body
@@ -21,11 +25,14 @@
     <navbar-component></navbar-component>
     <!-- CONTENT -->
     <main class="container px-4 4k:px-16">
-      <section class="section-wrapper mt-14 4k:mt-[4.5rem]" id="about-me">
+      <section
+        class="section-wrapper mt-14 4k:mt-[4.5rem] scroll-mt-12"
+        id="about-me"
+      >
         <!-- ABOUT ME -->
         <section class="md:grid md:grid-cols-6 lg:grid-cols-5 md:gap-x-4">
           <div class="col-span-4">
-            <h1 class="mb-0 text-center md:text-left">Michael Jessey</h1>
+            <h1 class="my-0 text-center md:text-left">Michael Jessey</h1>
             <h2
               class="mt-0.5 mb-10 xl:text-5xl hd:text-6xl text-center md:text-left font-extralight text-medium"
             >
@@ -151,7 +158,78 @@
       <!-- CONTACT ME -->
       <section class="section-wrapper" id="contact-me">
         <h2>Contact Me</h2>
-        <p>Get in touch.</p>
+        <p>
+          Feel free to contact me about anything
+          <span class="text-disabled"
+            >(note: if you're selling, I'm not buying)</span
+          >.
+        </p>
+        <div class="py-4 grid lg:grid-cols-2 gap-x-4 lg:gap-x-16 hd:gap-x-28">
+          <!-- SOCIAL LINKS -->
+          <div class="flex flex-col lg:order-2 mb-8 lg:mb-12">
+            <h4 class="mb-4 lg:mb-12">Find me somewhere online</h4>
+            <div
+              class="flex flex-col gap-y-4 xl:gap-y-6 text-2xl xl:text-3xl 2xl:text-4xl font-medium"
+            >
+              <linked-in-link></linked-in-link>
+              <twitter-link></twitter-link>
+              <medium-link></medium-link>
+              <github-link></github-link>
+              <email-link></email-link>
+            </div>
+          </div>
+          <!-- CONTACT FORM -->
+          <div class="lg:order-1">
+            <h4 class="mb-4">Send me a message directly</h4>
+            <form
+              class="space-y-6 2xl:space-y-10"
+              name="contact"
+              method="POST"
+              netlify
+            >
+              <div>
+                <label for="name" class="block mb-2 font-medium"
+                  >Your name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="block p-3 w-full text-high bg-slate-700 border border-slate-500/50 rounded-lg"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email" class="block mb-2 font-medium"
+                  >Your email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="block p-3 w-full text-high bg-slate-700 border border-slate-500/50 rounded-lg"
+                  required
+                />
+              </div>
+              <div class="sm:col-span-2">
+                <label for="message" class="block mb-2 font-medium"
+                  >Your message</label
+                >
+                <textarea
+                  id="message"
+                  rows="5"
+                  class="block p-3 w-full text-high bg-slate-700 border border-slate-500/50 rounded-lg"
+                ></textarea>
+              </div>
+              <div class="text-right">
+                <button
+                  type="submit"
+                  class="py-3 px-5 case-studies-nav font-medium text-center text-slate-900 rounded-lg bg-primary sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-light"
+                >
+                  Send message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
     <footer-component></footer-component>
