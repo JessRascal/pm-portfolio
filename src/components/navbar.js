@@ -69,10 +69,10 @@ class Navbar extends HTMLElement {
           x-show="$store.nav.isSidePanelOpen"
         ></div>
         <aside
-          class="absolute md:hidden top-0 left-full w-3/4 h-screen z-20 overflow-hidden bg-gradient-to-br from-slate-700 to-slate-900 border-l border-l-slate-600 transition ease-in-out"
+          class="absolute md:hidden top-0 left-full w-3/4 h-screen z-20 overflow-auto bg-gradient-to-br from-slate-700 to-slate-900 border-l border-l-slate-600 transition ease-in-out"
           :class="$store.nav.isSidePanelOpen ? '-translate-x-full' : ''"
         >
-          <div class="flex flex-col h-full p-6">
+          <div class="flex flex-col p-6">
             <!-- SIDE PANEL: CLOSE BUTTON -->
             <div class="self-end">
               <button
@@ -111,9 +111,9 @@ class Navbar extends HTMLElement {
                 </a>
               </template>
             </div>
-            <!-- SIDE PANEL: CONTACT LINKS -->
-            <div class="flex flex-col gap-y-4 mb-12 px-3">
             <hr class="border-slate-500/25" />
+            <!-- SIDE PANEL: CONTACT LINKS -->
+            <div class="flex flex-col gap-y-4 my-8 px-3">
               <template x-for="link in $store.aside.sections[1].items">
                 <a
                   x-bind:href="link.url"
