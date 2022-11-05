@@ -98,37 +98,45 @@ class Navbar extends HTMLElement {
               </button>
             </div>
             <!-- SIDE PANEL: NAV LINKS -->
-            <div class="flex-1">
+            <div class="flex-1 flex flex-col gap-y-4 mb-8 px-3">
               <template x-for="link in $store.nav.links">
                 <a
                   x-bind:href="link.url"
-                  x-text="link.text"
-                  class="block py-2 px-3 text-medium no-underline"
+                  class="flex items-center text-medium no-underline"
                   rel="noopener"
                   @click="$store.nav.isSidePanelOpen = false"
-                ></a>
+                >
+                  <i class="text-2xl" :class="link.iconClass"></i>
+                  <span class="ml-4" x-text="link.text"></span>
+                </a>
               </template>
             </div>
             <!-- SIDE PANEL: CONTACT LINKS -->
-            <div>
-              <div class="pl-3 text-sm text-disabled uppercase">Links</div>
+            <div class="flex flex-col gap-y-4 mb-12 px-3">
+            <hr class="border-slate-500/25" />
               <template x-for="link in $store.aside.sections[1].items">
                 <a
                   x-bind:href="link.url"
-                  x-text="link.text"
-                  class="block py-2 px-3 text-medium no-underline"
+                  target="_blank"
                   rel="noopener"
+                  class="flex items-center text-medium no-underline"
                   @click="$store.nav.isSidePanelOpen = false"
-                ></a>
+                >
+                  <i class="text-2xl" :class="link.iconClass"></i>
+                  <span class="ml-4" x-text="link.text"></span>
+                </a>
               </template>
               <template x-for="link in $store.aside.sections[2].items">
                 <a
                   x-bind:href="link.url"
-                  x-text="link.text"
-                  class="block py-2 px-3 text-medium no-underline"
+                  target="_blank"
                   rel="noopener"
+                  class="flex items-center text-medium no-underline"
                   @click="$store.nav.isSidePanelOpen = false"
-                ></a>
+                >
+                  <i class="text-2xl" :class="link.iconClass"></i>
+                  <span class="ml-4" x-text="link.text"></span>
+                </a>
               </template>
             </div>
           </div>

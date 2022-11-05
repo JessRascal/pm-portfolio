@@ -9,11 +9,11 @@ import './components/footer';
 import './components/about-me-meta';
 import './components/product-card';
 import './components/product-sidepanel';
-import './components/linked-in-link';
-import './components/twitter-link';
-import './components/email-link';
-import './components/medium-link';
-import './components/github-link';
+import './components/link-linked-in';
+import './components/link-twitter';
+import './components/link-email';
+import './components/link-blog';
+import './components/link-github';
 
 window.Alpine = Alpine;
 

@@ -17,7 +17,7 @@ class Footer extends HTMLElement {
             href="https://github.com/JessRascal/pm-portfolio"
             target="_blank"
             rel="noopener"
-            class="flex items-center justify-center md:justify-end no-underline"
+            class="inline-flex items-center justify-center md:justify-end no-underline"
             >
               <span class="mr-1 underline">Steal this site</span>
               <i class="ri-github-fill text-2xl"></i>

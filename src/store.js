@@ -4,10 +4,26 @@ import Alpine from 'alpinejs';
 Alpine.store('nav', {
   isSidePanelOpen: false,
   links: [
-    { text: 'About Me', url: '/index.html#about-me' },
-    { text: 'My Approach', url: '/index.html#my-approach' },
-    { text: 'Case Studies', url: '/index.html#case-studies' },
-    { text: 'Contact Me', url: '/index.html#contact-me' },
+    {
+      text: 'About Me',
+      url: '/index.html#about-me',
+      iconClass: 'ri-emotion-happy-fill',
+    },
+    {
+      text: 'My Approach',
+      url: '/index.html#my-approach',
+      iconClass: 'ri-rocket-fill',
+    },
+    {
+      text: 'Case Studies',
+      url: '/index.html#case-studies',
+      iconClass: 'ri-book-open-fill',
+    },
+    {
+      text: 'Contact Me',
+      url: '/index.html#contact-me',
+      iconClass: 'ri-chat-1-fill',
+    },
   ],
 });
 
@@ -20,7 +36,7 @@ Alpine.store('aside', {
       items: [
         { text: 'Product Management', value: '11yrs' },
         { text: 'Product Design', value: '7yrs' },
-        // { text: 'Products Delivered', value: '15' },
+        // { text: 'Products Delivered', value: '15', },
         { text: 'Users Helped', value: '20k' },
       ],
     },
@@ -28,20 +44,37 @@ Alpine.store('aside', {
       name: 'Contact',
       hasLinks: true,
       items: [
-        { text: 'hi@jessey.co.uk', url: 'mailto:hi@jessey.co.uk' },
+        {
+          text: 'hi@jessey.co.uk',
+          url: 'mailto:hi@jessey.co.uk',
+          iconClass: 'ri-mail-fill',
+        },
         {
           text: 'LinkedIn',
           url: 'https://www.linkedin.com/in/michael-jessey/',
+          iconClass: 'ri-linkedin-box-fill',
         },
-        { text: 'Twitter', url: 'https://twitter.com/JessRascal' },
+        {
+          text: 'Twitter',
+          url: 'https://twitter.com/JessRascal',
+          iconClass: 'ri-twitter-fill',
+        },
       ],
     },
     {
       name: 'Content',
       hasLinks: true,
       items: [
-        { text: 'My Blog', url: 'https://medium.com/@JessRascal' },
-        { text: 'GitHub', url: 'https://github.com/JessRascal' },
+        {
+          text: 'My Blog',
+          url: 'https://medium.com/@JessRascal',
+          iconClass: 'ri-quill-pen-fill',
+        },
+        {
+          text: 'GitHub',
+          url: 'https://github.com/JessRascal',
+          iconClass: 'ri-github-fill',
+        },
       ],
     },
     // {
@@ -52,7 +85,7 @@ Alpine.store('aside', {
     //       text: 'Product Manager | RTS Solutions',
     //       value: '2011-Present',
     //     },
-    //     { text: '', value: '7yrs' }, // TODO: Better name?
+    //     { text: '', value: '7yrs', }, // TODO: Better name?
     //   ],
     // },
   ],
