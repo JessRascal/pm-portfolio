@@ -142,7 +142,7 @@ Alpine.store('approach', {
     },
     {
       phase: 'Delivery Phase',
-      title: 'Handing-Off to the Development Team',
+      title: 'Briefing the Development Team',
       markdownSrc: 'hand-off.md',
     },
     {
